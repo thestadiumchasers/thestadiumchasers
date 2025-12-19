@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <title>Contact Us - The Stadium Chasers</title>
+
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      font-family: Consolas;
+    }
+
+    table {
+      width: 100%;
+      height: 100%;
+      border-collapse: collapse;
+    }
+
+    td {
+      vertical-align: top;
+    }
+
+    .outer {
+      width: 7.5%;
+      background: linear-gradient(to bottom, #c1121f, #8b0000);
+    }
+
+    .center {
+      width: 85%;
+      background: #ffffff;
+      color: #111;
+    }
+
+    .header {
+      background: #c1121f;
+      color: white;
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+
+    .header-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .logo img {
+      max-height: 40px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    .logo span {
+      font-size: 20px;
+      font-weight: bold;
+      vertical-align: middle;
+    }
+
+    .nav a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
+    }
+
+    .socials a {
+      margin-left: 8px;
+      font-size: 20px;
+      color: white;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .outer {
+        display: none;
+      }
+
+      .center {
+        width: 100%;
+      }
+
+      .header-table td {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 5px 0;
+      }
+
+      .nav a {
+        display: inline-block;
+        margin: 6px;
+      }
+
+      .logo img {
+        margin-bottom: 5px;
+      }
+    }
+
+    .auto-style1 {
+      font-family: Consolas;
+    }
+
+    .contact-form {
+      margin: 20px auto;
+      width: 60%;
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form h2 {
+      color: #c1121f;
+      text-align: center;
+    }
+
+    .contact-form label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    .contact-form button {
+      background-color: #c1121f;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #8b0000;
+    }
+
+  </style>
+</head>
+<body>
+
+<table class="auto-style1">
+  <tr>
+    <td class="outer"></td>
+
+    <td class="header center">
+      <table class="header-table">
+        <tr>
+          <td class="logo" style="vertical-align:middle;">
+            <a href="index.html" style="text-decoration:none; color:inherit;">
+              <img src="logo.png" alt="The Stadium Chasers Logo" 
+                   style="max-height:40px; border-radius:50%; border:2px solid white; 
+                          box-shadow:0 2px 5px rgba(0,0,0,0.3); vertical-align:middle; margin-right:10px;">
+              <span style="vertical-align:middle;">The Stadium Chasers</span>
+            </a>
+          </td>
+
+          <td class="nav" align="center" style="vertical-align:middle;">
+            <a href="getaquote.html">Get a Quote</a>
+            <a href="whatweoffer.html">What We Offer</a>
+            <a href="ourmission.html">Our Mission</a>
+          </td>
+
+          <td class="socials" align="right" style="vertical-align:middle;">
+            <a href="https://www.instagram.com/the.stadium.chasers/" target="_blank">
+              <img src="instagram.png" style="height:24px; margin-left:8px; vertical-align:middle;">
+            </a>
+            <a href="https://x.com/TheStadiumChsrs" target="_blank">
+              <img src="x.jpg" style="height:24px; margin-left:8px; vertical-align:middle;">
+            </a>
+            <a href="https://www.facebook.com/people/The-Stadium-Chasers/61583651139601/" target="_blank">
+              <img src="facebook.jpg" style="height:24px; margin-left:8px; vertical-align:middle;">
+            </a>
+          </td>
+        </tr>
+      </table>
+    </td>
+
+    <td class="outer"></td>
+  </tr>
+
+  <tr>
+    <td class="outer"></td>
+
+    <td class="center" style="background: url('../New%20folder/contactus.jpg') no-repeat center; background-size: cover;">
+      <h1 style="text-align: center; color: white;">Have You Got a Query?</h1>
+
+      <div class="contact-form">
+        <h2>Please enter your details below:</h2>
+        <form action="queryreceived.html" method="get">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Enter your full name" class="auto-style1">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="Enter your email address" class="auto-style1">
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required placeholder="Subject of your message" class="auto-style1">
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Write your message here" class="auto-style1"></textarea>
+
+          <button type="submit" class="auto-style1">Send</button>
+        </form>
+      </div>
+    </td>
+
+    <td class="outer"></td>
+  </tr>
+</table>
+
+<footer style="text-align: center; padding: 10px; background: #c1121f; color: white;">
+  <p class="auto-style1">&copy; 2025 The Stadium Chasers. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
